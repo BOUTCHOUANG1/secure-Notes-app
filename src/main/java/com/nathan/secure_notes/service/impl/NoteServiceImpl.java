@@ -1,15 +1,16 @@
-package com.nathan.secure_notes.service;
+package com.nathan.secure_notes.service.impl;
 
 import com.nathan.secure_notes.exception.APIException;
 import com.nathan.secure_notes.exception.ResourceNotFoundException;
 import com.nathan.secure_notes.model.Notes;
 import com.nathan.secure_notes.repository.NoteRepository;
+import com.nathan.secure_notes.service.NoteService;
 import lombok.RequiredArgsConstructor;
 
 import java.util.List;
 
 @RequiredArgsConstructor
-public class NoteServiceImpl implements NoteService{
+public class NoteServiceImpl implements NoteService {
     private final NoteRepository noteRepository;
 
     @Override

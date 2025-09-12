@@ -1,9 +1,8 @@
-package com.nathan.secure_notes.service;
+package com.nathan.secure_notes.service.impl;
 
 import com.nathan.secure_notes.model.User;
 import com.nathan.secure_notes.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
