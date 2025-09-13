@@ -1,6 +1,6 @@
 package com.nathan.secure_notes.service.impl;
 
-import com.nathan.secure_notes.dtos.UserDTO;
+import com.nathan.secure_notes.dto.UserDTO;
 import com.nathan.secure_notes.model.AppRole;
 import com.nathan.secure_notes.model.PasswordResetToken;
 import com.nathan.secure_notes.model.Role;
@@ -13,7 +13,6 @@ import com.nathan.secure_notes.service.UserService;
 import com.nathan.secure_notes.util.EmailService;
 import com.warrenstrange.googleauth.GoogleAuthenticatorKey;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -84,7 +83,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User findByUsername(String username) {
-        Optional<User> user = userRepository.findByUserName(username);
+        Optional<User> user = userRepository.findByUsername(username);
         return user.orElseThrow(() -> new RuntimeException("User not found with username: " + username));
     }
 

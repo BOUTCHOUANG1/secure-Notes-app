@@ -1,4 +1,4 @@
-package com.nathan.secure_notes.custom;
+package com.nathan.secure_notes.security.custom;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

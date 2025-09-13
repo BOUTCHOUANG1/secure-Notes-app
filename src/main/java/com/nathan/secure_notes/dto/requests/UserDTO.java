@@ -1,4 +1,4 @@
-package com.nathan.secure_notes.dtos.requests;
+package com.nathan.secure_notes.dto.requests;
 
 import com.nathan.secure_notes.model.Role;
 import lombok.AllArgsConstructor;

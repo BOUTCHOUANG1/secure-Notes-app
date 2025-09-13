@@ -1,14 +1,12 @@
 package com.nathan.secure_notes.controller;
 
-import com.nathan.secure_notes.dtos.UserDTO;
+import com.nathan.secure_notes.dto.UserDTO;
 import com.nathan.secure_notes.model.Role;
 import com.nathan.secure_notes.model.User;
 import com.nathan.secure_notes.service.UserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

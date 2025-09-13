@@ -13,8 +13,6 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.HashSet;
-import java.util.Objects;
 
 @Entity
 @Table(name = "users",
@@ -33,7 +31,7 @@ public class User {
     @Column(name = "username")
     @NotEmpty(message = "Username cannot be empty")
     @Size(min = 3, max = 20, message = "Username must be between 3 and 20 characters")
-    private String username;
+    private String userName;
 
     @Column(name = "email")
     @NotEmpty(message = "Email cannot be empty")
@@ -54,7 +52,9 @@ public class User {
 
     private String twoFactorSecret;
     private boolean isTwoFactorEnabled;
-    private String signupMethod;
+
+
+    private String signUpMethod;
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "role_id", referencedColumnName = "role_id")
@@ -67,8 +67,8 @@ public class User {
     @UpdateTimestamp
     private LocalDateTime updatedAt;
 
-    public User(String username, String email, String password) {
-        this.username = username;
+    public User(String userName, String email, String password) {
+        this.userName = userName;
         this.email = email;
         this.password = password;
     }

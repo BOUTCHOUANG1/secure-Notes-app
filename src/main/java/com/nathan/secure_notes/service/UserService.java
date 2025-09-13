@@ -1,6 +1,6 @@
 package com.nathan.secure_notes.service;
 
-import com.nathan.secure_notes.dtos.UserDTO;
+import com.nathan.secure_notes.dto.UserDTO;
 import com.nathan.secure_notes.model.Role;
 import com.nathan.secure_notes.model.User;
 import com.warrenstrange.googleauth.GoogleAuthenticatorKey;
